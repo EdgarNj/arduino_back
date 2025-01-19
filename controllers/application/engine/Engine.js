@@ -20,7 +20,6 @@ class EngineController {
                     if (engineWarmUpTime < 0) {
                         return res.status(400).json({ error: 'Invalid engineWarmUpTime. Must be a positive integer.' });
                     }
-                    console.log("mdav")
                     // Запуск двигателя с временем прогрева
                     car.engine = 'on';
                     car.engineWarmUpTime = engineWarmUpTime; // Устанавливаем время прогрева из запроса

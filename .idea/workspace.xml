@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8be4e0ef-4d2d-479c-9082-303d50166acd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/application/door/Door.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlewares/errorHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/application/door.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/application/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/hardware/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ms/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ms/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ms/license.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ms/license.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ms/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ms/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ms/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/ms/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/ms/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/ms/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/ms/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="8be4e0ef-4d2d-479c-9082-303d50166acd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +34,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/edgarhakobyan/Desktop/Arduino__back/middlewares",
+    "last_opened_file_path": "/Users/edgarhakobyan/Desktop/Arduino__back",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,7 +46,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/middlewares" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -88,6 +70,7 @@
       <updated>1736023423034</updated>
       <workItem from="1736023424087" duration="3182000" />
       <workItem from="1736246304893" duration="7780000" />
+      <workItem from="1737271829971" duration="18249000" />
     </task>
     <servers />
   </component>
