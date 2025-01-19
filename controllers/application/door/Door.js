@@ -19,7 +19,7 @@ class DoorController {
                     car = await Car.create({
                         engine: 'off',
                         doors: 'locked',
-                        trunk: 'closed',
+                        trunk: 'close',
                         lights: 'off',
                     });
                 }

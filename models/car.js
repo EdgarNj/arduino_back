@@ -9,7 +9,7 @@ Car.init(
             type: DataTypes.BIGINT.UNSIGNED,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true,
+            defaultValue: 1,
         },
         engine: {
             type: DataTypes.ENUM('on', 'off'),
