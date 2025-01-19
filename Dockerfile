@@ -18,4 +18,4 @@ COPY . .
 EXPOSE 4000
 
 # Set the default command to run migrations and then start the app
-CMD ["sh", "-c", "npm run migrate && npm start"]
+CMD ["sh", "-c", "npm install && npm run migrate && npm start"]
