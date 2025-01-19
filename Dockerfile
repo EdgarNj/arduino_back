@@ -4,11 +4,14 @@ FROM node:16
 # Set the working directory inside the container
 WORKDIR /usr/src/app
 
-# Copy package.json and package-lock.json (if present)
-COPY package*.json ./
+# Install Yarn
+RUN npm install -g yarn
 
-# Install dependencies using npm
-RUN npm install
+# Copy package.json and yarn.lock (if present)
+COPY package*.json yarn.lock ./
+
+# Install dependencies using Yarn
+RUN yarn install
 
 # Copy the rest of the application files
 COPY . .
@@ -17,4 +20,4 @@ COPY . .
 EXPOSE 4000
 
 # Set the default command to run migrations and then start the app
-CMD ["sh", "-c", "npm run migrate && npm start"]
+CMD ["sh", "-c", "yarn run migrate && yarn start"]
