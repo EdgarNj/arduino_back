@@ -2,34 +2,27 @@ version: '3.9'
 
 services:
   app:
-    image: node:16
+    build:
+      context: .  # The context is the root directory where the Dockerfile for the app is located
+      dockerfile: Dockerfile  # Optional if your Dockerfile is named 'Dockerfile'
     container_name: node_app
     restart: always
     working_dir: /usr/src/app
     volumes:
       - .:/usr/src/app
-    environment:
-      - NODE_ENV=production
-      - MYSQL_HOST=db
-      - MYSQL_PORT=3306
-      - MYSQL_DATABASE=exampledb
-      - MYSQL_USER=exampleuser
-      - MYSQL_PASSWORD=examplepassword
+    env_file:
+      - .env  # Load environment variables from .env file
     ports:
       - "4000:4000"
     depends_on:
       - db
-    command: "npm start -r dotenv/config app.js"
 
   db:
     image: mysql:8.0
     container_name: mysql_db
     restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: exampledb
-      MYSQL_USER: exampleuser
-      MYSQL_PASSWORD: examplepassword
+    env_file:
+      - .env  # Load environment variables from .env file
     ports:
       - "3306:3306"
     volumes:
@@ -41,8 +34,8 @@ services:
     restart: always
     environment:
       PMA_HOST: db
-      PMA_USER: exampleuser
-      PMA_PASSWORD: examplepassword
+      PMA_USER: ${MYSQL_USER}
+      PMA_PASSWORD: ${MYSQL_PASSWORD}
     ports:
       - "8080:80"
     depends_on:

@@ -1,20 +1,20 @@
-# Use official Node.js image as a base
-FROM node:18
+# Use the official Node.js image as the base
+FROM node:16
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /usr/src/app
 
-# Copy package.json and package-lock.json (if available)
+# Copy package.json and package-lock.json (if present)
 COPY package*.json ./
 
-# Install project dependencies
+# Install dependencies using npm
 RUN npm install
 
 # Copy the rest of the application files
 COPY . .
 
-# Expose the port that your app will run on
+# Expose the port that the app will run on
 EXPOSE 4000
 
-# Run migrations first and then start the application
-CMD npm run migrate && npm start
+# Set the default command to run migrations and then start the app
+CMD ["sh", "-c", "npm run migrate && npm start"]
