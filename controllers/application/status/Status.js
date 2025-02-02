@@ -18,8 +18,7 @@ class CarController {
                     lightsDuration: car.lightsDuration,
                     doors: car.doors,
                     trunk: car.trunk,
-                    createdAt: car.createdAt,
-                    updatedAt: car.updatedAt,
+                    horn:car.horn
                 },
             });
         } catch (error) {

@@ -42,6 +42,11 @@ Car.init(
             allowNull: true,
             comment: 'Время работы фар в секундах',
         },
+        horn: {
+            type: DataTypes.ENUM('on', 'off'),
+            allowNull: false,
+            defaultValue: 'off',
+        },
         createdAt: {
             type: DataTypes.DATE,
             allowNull: false,

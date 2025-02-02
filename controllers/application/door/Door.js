@@ -21,6 +21,7 @@ class DoorController {
                         doors: 'locked',
                         trunk: 'close',
                         lights: 'off',
+                        horn: 'off',
                     });
                 }
             }
